@@ -29,7 +29,12 @@ section, .left {
     max-width: 31.300rem;
 }
 
-.left {
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ .pitch{
     overflow-x: hidden;
     display: flex;
     flex-direction: row;
@@ -57,6 +62,11 @@ section p {
     line-height: 1.5rem;
 }
 
+
+.years{
+    font-family: 'Poller One', cursive;
+    font-size: 10.5rem;
+}
 picture, picture img {
     display: flex;
     width: 24.51rem;
@@ -70,27 +80,59 @@ picture {
     flex-direction: row;
 }
 
+
+aside, aside > div, aside .right > span{
+    display: flex;
+    flex-direction: row;
+}
 aside{
     margin: auto;
 }
-aside > div {
-    display: flex;
-    flex-direction: row;
+aside, aside > div {
+    width: 100%;
     justify-content: space-between;
 }
+
 aside > div:first-child {
-    width: 4rem;
+    display: flex;
+    flex: 1 0;
+    padding-right: 4rem;
 }
-aside .right:before {
-    height: .5rem;
-    background-color: var(--yellow36);
-    position: absolute;top: 2px;
-}
-aside .right {
-    width: 40rem;
+aside .right
+{
+    min-height: 2rem;
     position: relative;
 }
+
+aside .right:before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: var(--yellow36);
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 1px;
+    z-index: -1;
+}
+
+aside .right > span{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: var(--yellow36);
+    border-radius: 50%;
+
+}
+aside .right .active{
+    background-color: var(--yellow) !important;
+    border: solid 1px var(--yellow36);
+}
+
 aside img{
     width: 1.5rem;
     color: var(--yellow);
+}
+
+aside .button{
+    padding: 0 1rem;
 }
