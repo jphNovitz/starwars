@@ -3,13 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const years = document.getElementById('years')
     const arrow_left = document.getElementById('arrow-left')
     const arrow_right = document.getElementById('arrow-right')
+    const picture = document.getElementsByTagName('picture')[0]
+    var max_page = picture.getElementsByTagName('img').length
+    console.log(max_page)
     var page = 1
     var min_page = 1
-    var max_page = 3
 
-    const picture = document.getElementsByTagName('picture')[0]
+
     const pitch = document.getElementById('pitch')
     const bullets = document.getElementsByClassName('bullet')
+    console.log(bullets)
     const root = document.querySelector(":root");
 
     const step_img = 24.51
