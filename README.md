@@ -4,7 +4,8 @@ Dans une video Benjamen code donne un défi  à quelques dev : réaliser une pag
 j'ai réalisé ce petit travail sans regarder l'heure car j'ai travaillé par petits bout quand j'avais une poignée de
 temps disponible
 
-https://www.youtube.com/watch?v=Ld97MuYMaQQ
+
+[![Watch the video](https://img.youtube.com/vi/Ld97MuYMaQQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=Ld97MuYMaQQ)
 
 # Liens
 
