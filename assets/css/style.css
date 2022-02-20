@@ -161,3 +161,8 @@ aside .button{
     cursor: pointer;
     opacity: 1 !important;
 }
+
+h6 {
+    text-align: center;
+    margin-top: 5rem;
+}
